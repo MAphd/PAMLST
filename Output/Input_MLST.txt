@@ -1,0 +1,2 @@
+"Seqname" "ST" "acsA" "aroE" "guaA" "mutL" "nuoD" "ppsA" "trpE"
+"GCF_000006765.1_ASM676v1_genomic.fna.txt" 549 7 5 12 3 4 1 7

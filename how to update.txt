@@ -1,0 +1,12 @@
+
+download mlst profiles and alleles from pubmlst  https://pubmlst.org/bigsdb?db=pubmlst_paeruginosa_seqdef
+
+Combine all allele files to a single fasta file
+ie:
+cat acsA.fas aroE.fas guaA.fas mutL.fas nuoD.fas ppsA.fas trpE.fas > MLSTdb.fasta;
+
+run MLSTdbbuilder, move MLSTdb.rds to "C:/Users/mikkan/Documents/Bioinformatics/MLST/MLSTdb.rds"
+
+
+
+
