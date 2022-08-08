@@ -19,6 +19,9 @@ Avaliable commands:
 -h or -help Display this message
 ```
 
+Sequence types 9997, 9998 and 9999 are internal error codes.
+9997 is if the genome has a novel ST. 9998 is if 7 unique alleles can't be found. 9999 is if we get more or less than 7 perfect hits to the MLST alleles.
+
 Required software:
 * Rscript
 * blastn 
