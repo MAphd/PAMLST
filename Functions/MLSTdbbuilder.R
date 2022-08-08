@@ -1,11 +1,11 @@
+MLSTdbbuilder <- function(Alleledir){
 
 
+# library(readr)
 
-library(readr)
-
-Usedir <- dirname(rstudioapi::getSourceEditorContext()$path)
-
-Alleledir <- paste0(Usedir,"/db/")
+# Usedir <- dirname(rstudioapi::getSourceEditorContext()$path)
+# 
+# Alleledir <- paste0(Usedir,"/db/")
 
 
 
@@ -13,7 +13,7 @@ DE <- new.env(hash = TRUE)
 for( j in 1:length( list.files(Alleledir, "*.fas") )){
   
   # j <- 3
-  Data <- suppressWarnings(read_delim(paste0(Alleledir, list.files(Alleledir, "*.fas")[j]),">",trim_ws = FALSE, col_names = FALSE, col_types = cols()))
+  Data <- suppressMessages(suppressWarnings(read_delim(paste0(Alleledir,"/", list.files(Alleledir, "*.fas")[j]),">",trim_ws = FALSE, col_names = FALSE, col_types = cols())))
   
   #Get indexes of where a sequence starts and stops
   d <- which(!is.na(Data$X2))
@@ -96,9 +96,9 @@ for( j in 1:length( list.files(Alleledir, "*.fas") )){
   
 }
 
-saveRDS(DE, file=paste0(Alleledir,"MLSTdb.rds"))
+saveRDS(DE, file=paste0(Alleledir,"/MLSTdb.rds"))
 
-
+}
 
 
 # 

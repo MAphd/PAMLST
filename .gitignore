@@ -1,0 +1,6 @@
+
+*.fasta
+*.txt
+.Rhistory
+Output/Input_MLST.txt
+Output/GCF_000006765.1_ASM676v1_genomic.fna.txt
