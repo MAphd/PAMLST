@@ -31,3 +31,7 @@ Required R packages:
 
 Has been tested using Rscript 3.6.3 for Ubuntu 20.04 with blastn 2.9.0
 
+If you found this useful please cite https://doi.org/10.1099/mgen.0.000919
+```
+Anbo M, Jelsbak L. 2023. A bittersweet fate: detection of serotype switching in Pseudomonas aeruginosa. Microb Genomics 9:000919. 
+```
